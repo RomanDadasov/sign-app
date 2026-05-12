@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 
-const API_URL = window.location.hostname === 'localhost' 
-  ? 'http://localhost:5162/api/auth'
-  : 'http://localhost:5000/api/auth';
+const API_URL = 'http://localhost:5000/api/auth';
 
 function SignIn({ onLogin }) {
   const [form, setForm] = useState({ login: '', password: '' })
